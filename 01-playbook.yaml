@@ -4,10 +4,5 @@
    - name: ping the serever
      ansible.builtin.ping:
 
-- name: print
-  hosts: web
-  tasks: 
-   - name: "print helloworld"
-     ansible.builtin.debug:
-     msg: "Hello World"
+
 
