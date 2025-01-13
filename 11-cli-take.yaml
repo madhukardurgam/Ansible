@@ -1,0 +1,7 @@
+- name: taking the vars from cli 
+  hosts: local
+  connection: local
+  tasks:
+  - name: taking the vars from cli
+    ansible.builtin.debug:
+      msg: "hello {{ NAME }} {{ SURNAME }} your position is {{ POSITION }}"
