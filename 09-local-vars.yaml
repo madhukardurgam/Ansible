@@ -1,0 +1,7 @@
+- name: taking the vars from inventory file 
+  hosts: local
+  connection: local
+  tasks:
+  - name: taking the vars from inventory file 
+    ansible.builtin.debug:
+      msg: "hello {{ NAME }} {{ SURNAME }} your position is {{ POSITION }}"
