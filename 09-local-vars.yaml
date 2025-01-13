@@ -5,3 +5,12 @@
   - name: taking the vars from inventory file 
     ansible.builtin.debug:
       msg: "hello {{ NAME }} {{ SURNAME }} your position is {{ POSITION }}"
+
+#inventory file
+# [local]
+# localhost
+
+# [local:vars]
+# NAME=madhukar
+# SURNAME=durgam
+# POSITION=software engineer

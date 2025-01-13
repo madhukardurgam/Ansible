@@ -1,6 +1,10 @@
-- name: taking the vars from inventory file 
+- name: taking the vars from inventory 
   hosts: web
   tasks:
-  - name: taking the vars from inventory file 
+  - name: taking the vars from inventory 
     ansible.builtin.debug:
       msg: "hello {{ NAME }} {{ SURNAME }} your position is {{ POSITION }}"
+
+#inventory file
+#[web]
+#172.31.46.113 ansible_user=ec2-user ansible_password=DevOps321 NAME="madhukar" SURNAME="durgam" POSITION="software engineer"
