@@ -7,4 +7,4 @@
     SURNAME: durgam
   - name: task level vars
     ansible.builtin.debug:
-      msg: "hello {{ NAME }}{{ SURNAME }}"
+      msg: "hello {{ NAME }} {{ SURNAME }}"
