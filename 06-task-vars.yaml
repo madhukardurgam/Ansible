@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   tasks:
+  - name: task level vars
     vars:
       NAME: madhukar
       SURNAME: durgam
-  - name: task level vars
     ansible.builtin.debug:
       msg: "hello {{ NAME }} {{ SURNAME }}"
