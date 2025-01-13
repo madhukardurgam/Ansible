@@ -1,6 +1,8 @@
 - name: task vars
   hosts: local
   connection: local
+  vars:
+    NICKNAME: "smart boy"
   tasks:
   - name: task level vars
     vars:
@@ -8,3 +10,6 @@
       SURNAME: durgam
     ansible.builtin.debug:
       msg: "hello {{ NAME }} {{ SURNAME }}"
+  - name: play level variable
+    ansible.builtin.debug:
+      msg: "hello {{ NICKNAME }} {{ SURNAME }}"
