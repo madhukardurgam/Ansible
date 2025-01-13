@@ -1,0 +1,10 @@
+- name: varaibles
+  hosts: local
+  connection: local
+  vars:
+    NAME: madhukar
+    SURNAME: durgam
+  tasks:
+  - name: play level vars
+    ansible.builtin.debug:
+      msg: "hello {{ SURNAME }} {{ NAME }}"
