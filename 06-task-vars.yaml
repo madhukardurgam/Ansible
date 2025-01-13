@@ -1,0 +1,10 @@
+- name: task vars
+  hosts: local
+  connection: local
+  tasks:
+  vars:
+    NAME: madhukar
+    SURNAME: durgam
+  - name: task level vars
+    ansible.builtin.debug:
+      msg: "hello {{ NAME }}{{ SURNAME }}"
