@@ -1,0 +1,9 @@
+- name: varfiles
+  hosts: local
+  connection: local
+  vars_files:
+  - vars.yaml
+  tasks:
+  - name: accessing the vars from the from file
+    ansible.builtin.debug:
+      msg: "hello {{ NAME }} {{ SURNAME }} your designation is {{ POSITION }}"
