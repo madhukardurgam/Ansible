@@ -5,3 +5,9 @@
   - name: print msg
     ansible.builtin.debug:
       msg: " Hello Madhukar"
+
+#put the below one in ansible.cfg
+#[defaults]
+#inventory= inventory.ini
+
+#by the above configuration we no need to give any command in cli where as inventory.ini
