@@ -5,7 +5,8 @@
   tasks:
   - name: present and absent packages
     ansible.builtin.package:
-      msg: "{{ item }}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
     - {name: "nginx", state: absent"}
     - {name: "gcc", state: present }
