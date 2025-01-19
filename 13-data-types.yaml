@@ -5,14 +5,14 @@
     coursename: "Devops with aws" #string
     durtaion: 120 #numbers/integer
     topics: #list
-    - linux
-    - shell
-    - ansible
-    - aws
+        - linux
+        - shell
+        - ansible
+        - aws
     tools: #dictionary/map
-    ci: jenkins
-    cloud: aws
-    containerazation: docker
+        ci: jenkins
+        cloud: aws
+        containerazation: docker
   tasks:
   - name: data types printing
     ansible.builtin.debug:
