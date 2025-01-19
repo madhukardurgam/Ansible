@@ -1,0 +1,12 @@
+- name: present and absent packages
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: present and absent packages
+    ansible.builtin.package:
+      msg: "{{ item }}"
+    loop:
+    - {name: "nginx", state: absent"}
+    - {name: "gcc", state: present }
+    - {name: "zip", state: "absent" }
