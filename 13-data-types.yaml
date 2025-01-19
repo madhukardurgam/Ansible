@@ -16,5 +16,5 @@
   tasks:
   - name: data types printing
     ansible.builtin.debug:
-        msg: "Hello I am learning {{ coursename }} ,duartion {{ duration }}, topics covered are {{ topics }},
+        msg: "Hello I am learning {{ coursename }} ,duration {{ duration }}, topics covered are {{ topics }},
         tools covered are {{ tools }}"
