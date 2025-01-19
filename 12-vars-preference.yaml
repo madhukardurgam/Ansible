@@ -15,3 +15,36 @@
     #   GREET: "TASK"
     ansible.builtin.debug:
       msg: "Hello {{ GREET }}"
+
+# #preference is taken for the variables is
+# 1.cli vars
+# -e "GREET=cli"
+
+# 2.task level vars
+# tasks:
+#   - name: print variables
+#     # vars:
+#     #   GREET: "TASK"
+
+# 3.from files
+# create one file "vars.yaml"
+# # vars_files:
+# #   - vars.yaml
+# GREET: "from-files"
+
+# 4.from prompt
+#   # vars_prompt:
+#   # - name: GREET
+#   #   prompt: enter the value
+#   #   private: false
+
+# 5.form play
+# # vars:
+# #   GREET: "PLAY"
+
+# 6.from inventory
+# [local]
+# localhost
+
+# [local:vars]
+# GREET=inventory
