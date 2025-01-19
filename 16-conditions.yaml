@@ -1,6 +1,7 @@
 - name: based on family of linux
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: install nginx if RHEL
     ansible.builtin.dnf:
