@@ -3,7 +3,7 @@
   connection: local
   vars:
     coursename: "Devops with aws" #string
-    durtaion: 120 #numbers/integer
+    duration: 120 #numbers/integer
     topics: #list
         - linux
         - shell
