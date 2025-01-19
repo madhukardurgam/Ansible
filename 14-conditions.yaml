@@ -13,5 +13,5 @@
   - name: number is lesser than 15
     ansible.builtin.debug:
       msg: "given number is lesser than 15"
-    when: number | int > 15
+    when: number | int < 15
  
