@@ -5,3 +5,6 @@
   - name: taking the vars from cli
     ansible.builtin.debug:
       msg: "hello {{ NAME }} {{ SURNAME }} your position is {{ POSITION }}"
+
+
+#ansible-playbook -i inventory.ini 11-cli-take.yaml -e "NAME=madhukar SURNAME=durgam POSITION='software engineer'"
