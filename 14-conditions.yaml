@@ -14,4 +14,7 @@
     ansible.builtin.debug:
       msg: "given number is lesser than 15"
     when: number | int < 15
- 
+
+
+#we can also do in another way as the defaultly given by numer to compare wheather greater or lesser
+#my_number=50 like this
