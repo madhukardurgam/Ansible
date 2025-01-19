@@ -10,10 +10,10 @@
   tasks:
   - name: number is greater than or equal to 15
     ansible.builtin.debug:
-      msg: "given number is greater than or equal to 15{{ name }}"
+      msg: "given number is greater than or equal to 15"
     when: number >= 15
   - name: number is lesser than 15
     ansible.builtin.debug:
-      msg: "given number is lesser than 15{{ name }}"
+      msg: "given number is lesser than 15"
     when: number < 15
  
