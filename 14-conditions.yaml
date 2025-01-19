@@ -1,8 +1,6 @@
 - name: conditions
   hosts: local
   connection: local
-  vars:
-    my_number: 15
   vars_prompt:
   - name: number
     prompt: enter the number
